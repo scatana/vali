@@ -16,6 +16,17 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "en",
+        "locales": {
+          "fr": {
+            "translation": "src/i18n/messages.fr.xlf"
+          },
+          "ro": {
+            "translation": "src/i18n/messages.ro.xlf"
+          }
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -64,6 +75,15 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "fr": {
+              "localize": [ "fr" ]
+            },
+            "ro": {
+              "localize": [ "ro" ]
+            },
+            "all_locales": {
+              "localize": true
             }
           },
           "defaultConfiguration": "production"
@@ -76,6 +96,12 @@
             },
             "development": {
               "browserTarget": "vali:build:development"
+            },
+            "fr": {
+              "browserTarget": "vali:build:fr"
+            },
+            "ro": {
+              "browserTarget": "vali:build:ro"
             }
           },
           "defaultConfiguration": "development"
@@ -126,6 +152,9 @@
               "optimization": false,
               "sourceMap": true,
               "extractLicenses": false
+            },
+            "all_locales": {
+              "localize": true
             }
           },
           "defaultConfiguration": "production"
@@ -153,8 +182,8 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "vali:build:production",
-              "serverTarget": "vali:server:production"
+              "browserTarget": "vali:build:production,all_locales",
+              "serverTarget": "vali:server:production,all_locales"
             },
             "development": {
               "browserTarget": "vali:build:development",
