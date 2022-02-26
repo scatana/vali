@@ -5,19 +5,19 @@
       <trans-unit id="7110017985772601417" datatype="html">
         <source>Valentina Catana - Certified Translator, Montreal</source>
         <target state="translated">Valentina Catana - Traducteur agréé, Montréal</target>
+        
+      <context-group purpose="location"><context context-type="sourcefile">src/app/app.component.ts</context><context context-type="linenumber">14</context></context-group></trans-unit><trans-unit id="2639190206151598614" datatype="html">
+        <source>Certified translator Montreal, Quebec, Canada. Certified translations from and into English, French, Romanian. Official documents, general texts, subtitling.</source><target state="translated">Traducteur agréé Montréal, Québec, Canada. Traductions certifiées de et en français, anglais, roumain. Documents officiels, textes généraux, sous-titrage.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.ts</context>
-          <context context-type="linenumber">15</context>
+          <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8499710660314490734" datatype="html">
         <source>landing works!</source>
-        <target state="translated">La page fonctionne!</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/landing.component.html</context>
-          <context context-type="linenumber">1</context>
-        </context-group>
-      </trans-unit>
+        <target state="translated">la page fonctionne!</target>
+        
+      <context-group purpose="location"><context context-type="sourcefile">src/app/landing/landing.component.html</context><context context-type="linenumber">2</context></context-group></trans-unit>
     </body>
   </file>
 </xliff>

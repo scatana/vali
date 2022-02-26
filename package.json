@@ -6,7 +6,7 @@
     "start": "ng serve",
     "start:fr": "ng serve --configuration development,fr --port 4201",
     "start:ro": "ng serve --configuration development,ro --port 4202",
-    "extract:i18n": "ng extract-i18n",
+    "extract:i18n": "ng extract-i18n && xliffmerge",
     "test": "ng test",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
@@ -48,6 +48,15 @@
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "ngx-i18nsupport": "^0.17.1",
     "typescript": "~4.5.2"
+  },
+  "xliffmergeOptions": {
+    "srcDir": ".",
+    "genDir": "src/i18n",
+    "languages": [
+      "fr",
+      "ro"
+    ]
   }
 }
