@@ -6,6 +6,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Set outputs
+        id: vars
+        run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
+
       - name: Checkout repository
         uses: actions/checkout@v2
 
@@ -27,6 +31,6 @@ jobs:
       - name: Store artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: site-vali-${{github.sha}}
+          name: site-vali-${{steps.vars.outputs.sha_short}}
           path: |
             dist/vali/browser
