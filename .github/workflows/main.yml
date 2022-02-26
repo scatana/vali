@@ -1,16 +1,20 @@
 name: Site Vali
-on: push
+
+on: [push]
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js 16.x
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup Node
         uses: actions/setup-node@v1
         with:
           node-version: 16.x
 
-      - name: Setup
+      - name: Install dependencies
         run: npm ci
 
       - name: Test
@@ -25,4 +29,4 @@ jobs:
         with:
           name: site-vali
           path: |
-            dist/browser
+            dist/vali/browser
