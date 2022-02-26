@@ -1,4 +1,4 @@
-name: Site Valentina
+name: Site Vali
 on: push
 jobs:
   build:
@@ -16,3 +16,13 @@ jobs:
       - name: Test
         run: |
           npm test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
+
+      - name: Build
+        run: npm run prerender
+
+      - name: Store artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: site-vali
+          path: |
+            dist/browser
