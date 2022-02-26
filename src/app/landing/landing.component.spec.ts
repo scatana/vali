@@ -22,4 +22,9 @@ describe('LandingComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have a section with the correct id as the root element', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('section')?.id).toBe('landing');
+  });
 });

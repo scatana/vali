@@ -28,10 +28,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should set the title using the Title service`, () => {
+  it(`should set the correct title using the Title service`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     app.ngOnInit();
-    expect(titleServiceSpy.setTitle).toHaveBeenCalled();
+    expect(titleServiceSpy.setTitle).toHaveBeenCalledOnceWith('Valentina Catana - Certified Translator, Montreal');
   });
 });
