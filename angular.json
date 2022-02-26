@@ -39,6 +39,7 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/robots.txt",
+              "src/robots_deny_all.txt",
               "src/assets/images/favicon.ico",
               "src/assets/images/apple-touch-icon.png"
             ],
