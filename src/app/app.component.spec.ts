@@ -1,15 +1,25 @@
 import { TestBed } from '@angular/core/testing';
+import { Title } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
 
 describe('AppComponent', () => {
+  let titleServiceSpy: jasmine.SpyObj<Title>;
+
   beforeEach(async () => {
+    const spy = jasmine.createSpyObj('Title', ['setTitle']);
+
     await TestBed.configureTestingModule({
       declarations: [
         AppComponent,
         LandingComponent
       ],
+      providers: [
+        { provide: Title, useValue: spy }
+      ]
     }).compileComponents();
+
+    titleServiceSpy = TestBed.inject(Title) as jasmine.SpyObj<Title>;
   });
 
   it('should create the app', () => {
@@ -18,16 +28,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  xit(`should have as title 'vali'`, () => {
+  it(`should set the title using the Title service`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    // expect(app.title).toEqual('vali');
-  });
-
-  xit('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('vali app is running!');
+    app.ngOnInit();
+    expect(titleServiceSpy.setTitle).toHaveBeenCalled();
   });
 });
