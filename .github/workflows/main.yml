@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Set outputs
         id: vars
-        run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
+        run: echo "::set-output name=sha7::$(echo ${GITHUB_SHA} | cut -c1-7)"
 
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -31,6 +31,6 @@ jobs:
       - name: Store artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: site-vali-${{steps.vars.outputs.sha_short}}
+          name: site-vali-${{steps.vars.outputs.sha7}}
           path: |
             dist/vali/browser
