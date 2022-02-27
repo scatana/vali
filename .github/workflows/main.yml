@@ -1,4 +1,4 @@
-name: Site Vali
+name: Build
 
 on: [push]
 
@@ -31,6 +31,6 @@ jobs:
       - name: Store artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: site-vali-${{steps.vars.outputs.sha7}}
+          name: vali-${{steps.vars.outputs.sha7}}
           path: |
             dist/vali/browser
