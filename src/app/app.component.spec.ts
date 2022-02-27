@@ -1,5 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { Title, Meta } from '@angular/platform-browser';
+
 import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
 
@@ -9,7 +10,7 @@ describe('AppComponent', () => {
 
   beforeEach(async () => {
     const titleSpy = jasmine.createSpyObj('Title', ['setTitle']);
-    const metaSpy = jasmine.createSpyObj('Meta', ['addTags']);
+    const metaSpy = jasmine.createSpyObj('Meta', ['addTag']);
 
     await TestBed.configureTestingModule({
       declarations: [AppComponent, LandingComponent],
@@ -36,10 +37,21 @@ describe('AppComponent', () => {
     expect(titleServiceSpy.setTitle).toHaveBeenCalled();
   });
 
-  it(`should set meta tags using the Meta service`, () => {
+  it(`should set the 'description' meta tag`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     app.ngOnInit();
-    expect(metaServiceSpy.addTags).toHaveBeenCalled();
+    expect(metaServiceSpy.addTag).toHaveBeenCalledWith(
+      jasmine.objectContaining({ name: 'description' })
+    );
+  });
+
+  it(`should set the 'format-detection' meta tag`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    app.ngOnInit();
+    expect(metaServiceSpy.addTag).toHaveBeenCalledWith(
+      jasmine.objectContaining({ name: 'format-detection' })
+    );
   });
 });

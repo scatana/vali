@@ -13,15 +13,13 @@ export class AppComponent {
     this.titleService.setTitle(
       $localize`Valentina Catana - Certified Translator, Montreal`
     );
-    this.metaService.addTags([
-      {
-        name: 'description',
-        content: $localize`Certified translator Montreal, Quebec, Canada. Certified translations from and into English, French, Romanian. Official documents, general texts, subtitling.`,
-      },
-      {
-        name: 'format-detection',
-        content: 'telephone=no',
-      },
-    ]);
+    this.metaService.addTag({
+      name: 'description',
+      content: $localize`Certified translator Montreal, Quebec, Canada. Certified translations from and into English, French, Romanian. Official documents, general texts, subtitling.`,
+    });
+    this.metaService.addTag({
+      name: 'format-detection',
+      content: 'telephone=no',
+    });
   }
 }
