@@ -8,11 +8,8 @@
         
       <context-group purpose="location"><context context-type="sourcefile">src/app/app.component.ts</context><context context-type="linenumber">14</context></context-group></trans-unit><trans-unit id="2639190206151598614" datatype="html">
         <source>Certified translator Montreal, Quebec, Canada. Certified translations from and into English, French, Romanian. Official documents, general texts, subtitling.</source><target state="translated">Traducător autorizat Montreal, Quebec, Canada. Traduceri autorizate din și în română, franceză, engleză. Documente oficiale, texte generale, subtitrări.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.ts</context>
-          <context context-type="linenumber">19</context>
-        </context-group>
-      </trans-unit>
+        
+      <context-group purpose="location"><context context-type="sourcefile">src/app/app.component.ts</context><context context-type="linenumber">18</context></context-group></trans-unit>
       <trans-unit id="8499710660314490734" datatype="html">
         <source>landing works!</source>
         <target state="translated">pagina funcționează!</target>
