@@ -22,7 +22,7 @@ jobs:
       - name: Store artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: vali-site
+          name: vali-dist
           path: |
             dist/vali/browser
 
@@ -34,6 +34,6 @@ jobs:
       - name: Retrieve artifacts
         uses: actions/download-artifact@v3
         with:
-          name: vali-site
+          name: vali-dist
       - name: Display structure of downloaded files
         run: ls -R
