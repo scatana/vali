@@ -1,6 +1,6 @@
-name: Build
+name: (Staging) Build and deploy
 
-on: [push]
+on: push
 
 jobs:
   build:
@@ -9,28 +9,30 @@ jobs:
       - name: Set variables
         id: vars
         run: echo "::set-output name=sha7::$(echo ${GITHUB_SHA} | cut -c1-7)"
-
       - name: Checkout repository
-        uses: actions/checkout@v2
-
+        uses: actions/checkout@v3
       - name: Setup Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: 16.x
-
       - name: Install dependencies
         run: npm ci
-
       - name: Run unit tests
         run: |
           npm test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
-
       - name: Build
         run: npm run prerender
-
       - name: Store artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: vali-${{steps.vars.outputs.sha7}}
           path: |
             dist/vali/browser
+
+  deploy:
+    runs-on: ubuntu-latest
+    environment: staging
+    needs: build
+    steps:
+      - name: deploy
+        run: echo "deploying..."
