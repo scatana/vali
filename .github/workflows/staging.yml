@@ -6,9 +6,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Set variables
-        id: vars
-        run: echo "::set-output name=sha7::$(echo ${GITHUB_SHA} | cut -c1-7)"
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: Setup Node
@@ -25,7 +22,7 @@ jobs:
       - name: Store artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: vali-${{steps.vars.outputs.sha7}}
+          name: vali-site
           path: |
             dist/vali/browser
 
@@ -34,5 +31,9 @@ jobs:
     environment: staging
     needs: build
     steps:
-      - name: deploy
-        run: echo "deploying..."
+      - name: Retrieve artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: vali-site
+      - name: Display structure of downloaded files
+        run: ls -R
