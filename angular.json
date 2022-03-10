@@ -38,7 +38,6 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/netlify.toml",
               "src/robots.txt",
               "src/assets/images/favicon.ico",
               "src/assets/images/apple-touch-icon.png"
