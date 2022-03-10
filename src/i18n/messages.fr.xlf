@@ -9,12 +9,20 @@
       <context-group purpose="location"><context context-type="sourcefile">src/app/app.component.ts</context><context context-type="linenumber">14</context></context-group></trans-unit><trans-unit id="2639190206151598614" datatype="html">
         <source>Certified translator Montreal, Quebec, Canada. Certified translations from and into English, French, Romanian. Official documents, general texts, subtitling.</source><target state="translated">Traducteur agréé Montréal, Québec, Canada. Traductions certifiées de et en français, anglais, roumain. Documents officiels, textes généraux, sous-titrage.</target>
         
-      <context-group purpose="location"><context context-type="sourcefile">src/app/app.component.ts</context><context context-type="linenumber">18</context></context-group></trans-unit>
-      <trans-unit id="8499710660314490734" datatype="html">
-        <source>landing works!</source>
-        <target state="translated">la page fonctionne!</target>
-        
-      <context-group purpose="location"><context context-type="sourcefile">src/app/landing/landing.component.html</context><context context-type="linenumber">2</context></context-group></trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/app.component.ts</context><context context-type="linenumber">18</context></context-group></trans-unit><trans-unit id="4746331966856921428" datatype="html">
+        <source>Valentina Catana</source><target state="translated">Valentina Catana</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/landing/landing.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit><trans-unit id="3835046208910558328" datatype="html">
+        <source>Certified Translator</source><target state="translated">Traducteur agréé</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/landing/landing.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      
     </body>
   </file>
 </xliff>
