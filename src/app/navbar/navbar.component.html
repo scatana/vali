@@ -3,11 +3,11 @@
     <a class="navbar-brand" href="#">Navbar</a>
     <button
       class="navbar-toggler"
-      [ngClass]="{ collapsed: isNavbarCollapsed }"
+      [ngClass]="{ collapsed: isMenuCollapsed }"
       type="button"
-      (click)="toggleNavbar()"
+      (click)="toggleMenu()"
       aria-controls="navbarNav"
-      [attr.aria-expanded]="!isNavbarCollapsed"
+      [attr.aria-expanded]="!isMenuCollapsed"
       aria-label="Toggle navigation"
       i18n-aria-label
     >
@@ -15,7 +15,8 @@
     </button>
     <div
       class="navbar-collapse collapse justify-content-between"
-      [ngClass]="{ show: !isNavbarCollapsed }"
+      [ngClass]="{ show: !isMenuCollapsed }"
+      (window:resize)="collapseMenu()"
       id="navbarNav"
     >
       <ul class="navbar-nav">

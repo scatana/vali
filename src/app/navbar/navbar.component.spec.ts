@@ -22,17 +22,37 @@ describe('NavbarComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should start with a collapsed navbar', () => {
-    expect(component.isNavbarCollapsed).toBe(true);
+  it('should start with a collapsed menu', () => {
+    expect(component.isMenuCollapsed).toBe(true);
   });
 
-  describe('toggleNavbar()', () => {
-    it('should toggle the collapsed/uncollapsed state of the navbar', () => {
-      component.toggleNavbar();
-      expect(component.isNavbarCollapsed).toBe(false);
+  it('should collapse the menu when the window is resized', () => {
+    const spyCollapseMenu = spyOn(component, 'collapseMenu');
 
-      component.toggleNavbar();
-      expect(component.isNavbarCollapsed).toBe(true);
+    component.toggleMenu();
+    expect(component.isMenuCollapsed).toBe(false);
+
+    window.dispatchEvent(new Event('resize'));
+    expect(spyCollapseMenu).toHaveBeenCalled();
+  });
+
+  describe('toggleMenu()', () => {
+    it('should toggle the collapsed/uncollapsed state of the menu', () => {
+      component.toggleMenu();
+      expect(component.isMenuCollapsed).toBe(false);
+
+      component.toggleMenu();
+      expect(component.isMenuCollapsed).toBe(true);
+    });
+  });
+
+  describe('collapseMenu()', () => {
+    it('should collapse the menu', () => {
+      component.toggleMenu();
+      expect(component.isMenuCollapsed).toBe(false);
+
+      component.collapseMenu();
+      expect(component.isMenuCollapsed).toBe(true);
     });
   });
 });

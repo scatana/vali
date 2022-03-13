@@ -6,13 +6,17 @@ import { Component, Inject, LOCALE_ID, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
-  isNavbarCollapsed = true;
+  isMenuCollapsed = true;
 
   constructor(@Inject(LOCALE_ID) public locale: string) {}
 
   ngOnInit(): void {}
 
-  toggleNavbar(): void {
-    this.isNavbarCollapsed = !this.isNavbarCollapsed;
+  toggleMenu(): void {
+    this.isMenuCollapsed = !this.isMenuCollapsed;
+  }
+
+  collapseMenu(): void {
+    this.isMenuCollapsed = true;
   }
 }
