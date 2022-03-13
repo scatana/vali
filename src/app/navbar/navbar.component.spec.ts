@@ -8,9 +8,8 @@ describe('NavbarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NavbarComponent ]
-    })
-    .compileComponents();
+      declarations: [NavbarComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
@@ -21,5 +20,19 @@ describe('NavbarComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should start with a collapsed navbar', () => {
+    expect(component.isNavbarCollapsed).toBe(true);
+  });
+
+  describe('toggleNavbar()', () => {
+    it('should toggle the collapsed/uncollapsed state of the navbar', () => {
+      component.toggleNavbar();
+      expect(component.isNavbarCollapsed).toBe(false);
+
+      component.toggleNavbar();
+      expect(component.isNavbarCollapsed).toBe(true);
+    });
   });
 });
