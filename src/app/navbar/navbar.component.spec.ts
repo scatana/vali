@@ -27,13 +27,14 @@ describe('NavbarComponent', () => {
   });
 
   it('should collapse the menu when the window is resized', () => {
-    const spyCollapseMenu = spyOn(component, 'collapseMenu');
+    const spyCollapseMenu = spyOn(component, 'collapseMenu').and.callThrough();
 
     component.toggleMenu();
     expect(component.isMenuCollapsed).toBe(false);
 
     window.dispatchEvent(new Event('resize'));
     expect(spyCollapseMenu).toHaveBeenCalled();
+    expect(component.isMenuCollapsed).toBe(true);
   });
 
   describe('toggleMenu()', () => {
