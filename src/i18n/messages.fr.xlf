@@ -15,11 +15,11 @@
       <context-group purpose="location"><context context-type="sourcefile">src/app/landing/landing.component.html</context><context context-type="linenumber">2</context></context-group></trans-unit><trans-unit id="3835046208910558328" datatype="html">
         <source>Certified Translator</source><target state="translated">Traducteur agréé</target>
         
-      <context-group purpose="location"><context context-type="sourcefile">src/app/landing/landing.component.html</context><context context-type="linenumber">4</context></context-group></trans-unit><trans-unit id="958483066231959315" datatype="html">
-        <source>Member of the Ordre des traducteurs, terminologues et interprètes agréés du Québec</source><target state="translated">Membre de l’Ordre des traducteurs, terminologues et interprètes agréés du Québec</target>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/landing/landing.component.html</context><context context-type="linenumber">4</context></context-group></trans-unit><trans-unit id="2720774049482773325" datatype="html">
+        <source> Member of <x id="START_LINK" ctype="x-a" equiv-text="&lt;a         href=&quot;https://ottiaq.org/en/&quot;         class=&quot;link-light&quot;         target=&quot;_blank&quot;         rel=&quot;noopener&quot;         >"/>OTTIAQ<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a       >"/></source><target state="translated"> Membre de <x id="START_LINK" ctype="x-a" equiv-text="&lt;a         href=&quot;https://ottiaq.org/en/&quot;         class=&quot;link-light&quot;         target=&quot;_blank&quot;         rel=&quot;noopener&quot;         >"/>OTTIAQ<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a       >"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/landing/landing.component.html</context>
-          <context context-type="linenumber">7,8</context>
+          <context context-type="linenumber">5,13</context>
         </context-group>
       </trans-unit><trans-unit id="8255834268347738766" datatype="html">
         <source>Toggle navigation</source><target state="translated">Afficher/cacher le menu</target>
