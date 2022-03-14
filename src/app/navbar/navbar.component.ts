@@ -19,4 +19,7 @@ export class NavbarComponent implements OnInit {
   collapseMenu(): void {
     this.isMenuCollapsed = true;
   }
+
+  // Template helpers for aria attributes
+  _language = $localize`language`;
 }
