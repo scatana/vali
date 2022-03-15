@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LandingComponent } from './landing.component';
+import { HeroComponent } from './hero.component';
 
-describe('LandingComponent', () => {
-  let component: LandingComponent;
-  let fixture: ComponentFixture<LandingComponent>;
+describe('HeroComponent', () => {
+  let component: HeroComponent;
+  let fixture: ComponentFixture<HeroComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [LandingComponent],
+      declarations: [HeroComponent],
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LandingComponent);
+    fixture = TestBed.createComponent(HeroComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -24,6 +24,6 @@ describe('LandingComponent', () => {
 
   it('should have a section with the correct id as the root element', () => {
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('section')?.id).toBe('landing');
+    expect(compiled.querySelector('section')?.id).toBe('hero');
   });
 });

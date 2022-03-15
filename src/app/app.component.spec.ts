@@ -3,7 +3,7 @@ import { Title, Meta } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { LandingComponent } from './landing/landing.component';
+import { HeroComponent } from './hero/hero.component';
 
 describe('AppComponent', () => {
   let titleServiceSpy: jasmine.SpyObj<Title>;
@@ -14,7 +14,7 @@ describe('AppComponent', () => {
     const metaSpy = jasmine.createSpyObj('Meta', ['addTag']);
 
     await TestBed.configureTestingModule({
-      declarations: [AppComponent, NavbarComponent, LandingComponent],
+      declarations: [AppComponent, NavbarComponent, HeroComponent],
       providers: [
         { provide: Title, useValue: titleSpy },
         { provide: Meta, useValue: metaSpy },
