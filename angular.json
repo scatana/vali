@@ -37,11 +37,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/robots.txt",
-              "src/assets/images/favicon.ico",
-              "src/assets/images/apple-touch-icon.png"
-            ],
+            "assets": ["src/robots.txt", "src/assets"],
             "styles": ["src/styles.scss"],
             "scripts": []
           },
