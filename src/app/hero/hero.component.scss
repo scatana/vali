@@ -1,9 +1,30 @@
 #hero {
-  background-image: url(../../assets/images/desktop.jpg);
+  background-image: url(../../assets/images/hero-bg_576.jpg);
   background-position: center;
   background-size: cover;
   padding-bottom: 4rem;
   text-shadow: 0 0 2px #000;
+
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    background-image: url(../../assets/images/hero-bg_768.jpg);
+  }
+  // // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    background-image: url(../../assets/images/hero-bg_992.jpg);
+  }
+  // // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    background-image: url(../../assets/images/hero-bg_1200.jpg);
+  }
+  // // X-Large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    background-image: url(../../assets/images/hero-bg_1400.jpg);
+  }
+  // // XX-Large devices (larger desktops, 1400px and up)
+  @media (min-width: 1400px) {
+    background-image: url(../../assets/images/hero-bg_1920.jpg);
+  }
 
   h1 {
     letter-spacing: 0.15rem;
