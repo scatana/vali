@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm navbar-light fixed-top bg-light shadow">
+<nav class="navbar navbar-expand-sm navbar-dark fixed-top shadow">
   <div class="container container-fluid">
     <a class="navbar-brand" href="/{{ locale }}" aria-label="Logo"></a>
     <button
@@ -14,14 +14,17 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div
-      class="navbar-collapse collapse justify-content-between"
+      class="navbar-collapse collapse justify-content-end text-uppercase"
       [ngClass]="{ show: !isMenuCollapsed }"
       (window:resize)="collapseMenu()"
       id="navbarNav"
     >
-      <ul class="navbar-nav">
+      <ul class="navbar-nav pe-3">
         <li class="nav-item">
-          <a class="nav-link" href="#" i18n>Services & rates</a>
+          <a class="nav-link" href="#" i18n>Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" i18n>Rates</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#" i18n>Testimonials</a>
@@ -30,11 +33,11 @@
           <a class="nav-link" href="#" i18n>Contact</a>
         </li>
       </ul>
-      <ul class="navbar-nav">
+      <ul class="navbar-nav language ps-3">
         <li class="nav-item">
           <a
             href="/en"
-            class="nav-link text-uppercase"
+            class="nav-link"
             [ngClass]="{ 'active fw-bold': locale === 'en' }"
             [attr.aria-current]="locale === 'en' ? _language : undefined"
             >en</a
@@ -43,7 +46,7 @@
         <li class="nav-item">
           <a
             href="/fr"
-            class="nav-link text-uppercase"
+            class="nav-link"
             [ngClass]="{ 'active fw-bold': locale === 'fr' }"
             [attr.aria-current]="locale === 'fr' ? _language : undefined"
             >fr</a
@@ -52,7 +55,7 @@
         <li class="nav-item">
           <a
             href="/ro"
-            class="nav-link text-uppercase"
+            class="nav-link"
             [ngClass]="{ 'active fw-bold': locale === 'ro' }"
             [attr.aria-current]="locale === 'ro' ? _language : undefined"
             >ro</a

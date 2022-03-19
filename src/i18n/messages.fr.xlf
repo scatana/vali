@@ -11,38 +11,38 @@
         
       <context-group purpose="location"><context context-type="sourcefile">src/app/app.component.ts</context><context context-type="linenumber">18</context></context-group></trans-unit><trans-unit id="7888618475525464632" datatype="html">
         <source>Valentina</source><target state="translated">Valentina</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/landing.component.html</context>
-          <context context-type="linenumber">5</context>
-        </context-group>
-      </trans-unit><trans-unit id="1996970629812294014" datatype="html">
+        
+      <context-group purpose="location"><context context-type="sourcefile">src/app/hero/hero.component.html</context><context context-type="linenumber">5</context></context-group></trans-unit><trans-unit id="1996970629812294014" datatype="html">
         <source>Catana</source><target state="translated">Catana</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/landing.component.html</context>
-          <context context-type="linenumber">6</context>
-        </context-group>
-      </trans-unit><trans-unit id="4490609624548278419" datatype="html">
+        
+      <context-group purpose="location"><context context-type="sourcefile">src/app/hero/hero.component.html</context><context context-type="linenumber">6</context></context-group></trans-unit><trans-unit id="4490609624548278419" datatype="html">
         <source>Certified Translator. Member of OTTIAQ.</source><target state="translated">Traducteur agréé. Membre de l’OTTIAQ.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/landing.component.html</context>
-          <context context-type="linenumber">7</context>
-        </context-group>
-      </trans-unit><trans-unit id="8255834268347738766" datatype="html">
+        
+      <context-group purpose="location"><context context-type="sourcefile">src/app/hero/hero.component.html</context><context context-type="linenumber">7</context></context-group></trans-unit><trans-unit id="8255834268347738766" datatype="html">
         <source>Toggle navigation</source><target state="translated">Afficher/cacher le menu</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
           <context context-type="linenumber">11</context>
         </context-group>
-      </trans-unit><trans-unit id="7378091405613210579" datatype="html">
-        <source>Services &amp; rates</source><target state="translated">Services et prix</target>
-        
-      <context-group purpose="location"><context context-type="sourcefile">src/app/navbar/navbar.component.html</context><context context-type="linenumber">24</context></context-group></trans-unit><trans-unit id="7100508900545127127" datatype="html">
+      </trans-unit><trans-unit id="7143579180750436311" datatype="html">
+        <source>Services</source><target state="translated">Services</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit><trans-unit id="5549658200455976034" datatype="html">
+        <source>Rates</source><target state="translated">Prix</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit><trans-unit id="7100508900545127127" datatype="html">
         <source>Testimonials</source><target state="translated">Témoignages</target>
         
-      <context-group purpose="location"><context context-type="sourcefile">src/app/navbar/navbar.component.html</context><context context-type="linenumber">27</context></context-group></trans-unit><trans-unit id="7922989125096435449" datatype="html">
+      <context-group purpose="location"><context context-type="sourcefile">src/app/navbar/navbar.component.html</context><context context-type="linenumber">30</context></context-group></trans-unit><trans-unit id="7922989125096435449" datatype="html">
         <source>Contact</source><target state="translated">Contact</target>
         
-      <context-group purpose="location"><context context-type="sourcefile">src/app/navbar/navbar.component.html</context><context context-type="linenumber">30</context></context-group></trans-unit><trans-unit id="2347724151568473592" datatype="html">
+      <context-group purpose="location"><context context-type="sourcefile">src/app/navbar/navbar.component.html</context><context context-type="linenumber">33</context></context-group></trans-unit><trans-unit id="2347724151568473592" datatype="html">
         <source>language</source><target state="translated">langue</target>
         
       <context-group purpose="location"><context context-type="sourcefile">src/app/navbar/navbar.component.ts</context><context context-type="linenumber">24</context></context-group></trans-unit>
