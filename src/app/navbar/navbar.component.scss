@@ -2,7 +2,7 @@
 @import "~bootstrap/scss/variables";
 
 .navbar {
-  background-color: #a00000;
+  background-color: #a71717;
 }
 
 .navbar-collapse.show {
@@ -11,7 +11,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient($red, #a00000);
+  background: linear-gradient(to top, #a71717, $red);
 
   .navbar-nav {
     height: 100%;
