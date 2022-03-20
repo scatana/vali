@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm navbar-dark fixed-top shadow">
+<nav class="navbar navbar-expand-sm navbar-dark shadow">
   <div class="container container-fluid">
     <a class="navbar-brand" href="/{{ locale }}" aria-label="Logo"></a>
     <button
@@ -14,12 +14,14 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div
-      class="navbar-collapse collapse justify-content-end text-uppercase"
+      class="navbar-collapse collapse"
       [ngClass]="{ show: !isMenuCollapsed }"
       (window:resize)="collapseMenu()"
       id="navbarNav"
     >
-      <ul class="navbar-nav pe-3">
+      <ul
+        class="navbar-nav ms-auto d-flex justify-content-center align-items-center text-center text-uppercase"
+      >
         <li class="nav-item">
           <a class="nav-link" href="#" i18n>Services</a>
         </li>
@@ -32,8 +34,9 @@
         <li class="nav-item">
           <a class="nav-link" href="#" i18n>Contact</a>
         </li>
-      </ul>
-      <ul class="navbar-nav language ps-3">
+        <li class="nav-item">
+          <span class="separator px-2">&mid;</span>
+        </li>
         <li class="nav-item">
           <a
             href="/en"

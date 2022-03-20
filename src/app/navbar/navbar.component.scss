@@ -1,5 +1,21 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
 .navbar {
   background-color: #800020;
+}
+
+.navbar-collapse.show {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#800020, $red);
+
+  .navbar-nav {
+    height: 100%;
+  }
 }
 
 .navbar-brand {
@@ -10,6 +26,6 @@
   background-size: contain;
 }
 
-.navbar-nav.language {
-  border-left: 1px solid rgba(255, 255, 255, 0.35);
+.separator {
+  color: rgba(255, 255, 255, 0.35);
 }
