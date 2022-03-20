@@ -2,12 +2,12 @@
   <div class="container container-fluid">
     <a class="navbar-brand" href="/{{ locale }}" aria-label="Logo"></a>
     <button
-      class="navbar-toggler"
-      [ngClass]="{ collapsed: isMenuCollapsed }"
       type="button"
+      class="navbar-toggler"
+      [ngClass]="{ collapsed: isMenuClosed }"
       (click)="toggleMenu()"
       aria-controls="navbarNav"
-      [attr.aria-expanded]="!isMenuCollapsed"
+      [attr.aria-expanded]="!isMenuClosed"
       aria-label="Toggle navigation"
       i18n-aria-label
     >
@@ -15,10 +15,18 @@
     </button>
     <div
       class="navbar-collapse collapse"
-      [ngClass]="{ show: !isMenuCollapsed }"
-      (window:resize)="collapseMenu()"
+      [ngClass]="{ show: !isMenuClosed }"
+      (window:resize)="closeMenu()"
       id="navbarNav"
     >
+      <button
+        type="button"
+        class="btn-close btn-close-white p-3"
+        [ngClass]="{ 'd-none': isMenuClosed, 'd-block': !isMenuClosed }"
+        (click)="closeMenu()"
+        aria-label="Close"
+        i18n-aria-label
+      ></button>
       <ul
         class="navbar-nav ms-auto d-flex justify-content-center align-items-center text-capitalize text-center"
       >

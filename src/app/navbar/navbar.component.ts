@@ -6,18 +6,18 @@ import { Component, Inject, LOCALE_ID, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
-  isMenuCollapsed = true;
+  isMenuClosed = true;
 
   constructor(@Inject(LOCALE_ID) public locale: string) {}
 
   ngOnInit(): void {}
 
   toggleMenu(): void {
-    this.isMenuCollapsed = !this.isMenuCollapsed;
+    this.isMenuClosed = !this.isMenuClosed;
   }
 
-  collapseMenu(): void {
-    this.isMenuCollapsed = true;
+  closeMenu(): void {
+    this.isMenuClosed = true;
   }
 
   // Template helpers for aria attributes
