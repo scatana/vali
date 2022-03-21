@@ -28,49 +28,62 @@
         i18n-aria-label
       ></button>
       <ul
-        class="navbar-nav ms-auto d-flex justify-content-center align-items-center text-capitalize text-center"
+        class="navbar-nav ms-auto d-flex justify-content-center align-items-center text-center"
       >
-        <li class="nav-item">
+        <li class="nav-item logo">
+          <img
+            src="assets/images/logo_128-monogram.png"
+            alt="Logo"
+            class="mb-5"
+          />
+        </li>
+        <li class="nav-item section">
           <a class="nav-link" href="#" i18n>Services</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item section">
           <a class="nav-link" href="#" i18n>Rates</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item section">
           <a class="nav-link" href="#" i18n>Testimonials</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item section">
           <a class="nav-link" href="#" i18n>Contact</a>
         </li>
         <li class="nav-item">
-          <span class="separator px-2">&mid;</span>
+          <span class="separator px-2 fs-3">&bull;</span>
         </li>
         <li class="nav-item">
           <a
             href="/en"
-            class="nav-link"
+            class="nav-link language"
             [ngClass]="{ 'active fw-bold': locale === 'en' }"
             [attr.aria-current]="locale === 'en' ? _language : undefined"
-            >en</a
           >
+            <span class="short">En</span>
+            <span class="long">English</span>
+          </a>
         </li>
         <li class="nav-item">
           <a
             href="/fr"
-            class="nav-link"
+            class="nav-link language"
             [ngClass]="{ 'active fw-bold': locale === 'fr' }"
             [attr.aria-current]="locale === 'fr' ? _language : undefined"
-            >fr</a
           >
+            <span class="short">Fr</span>
+            <span class="long">Français</span>
+          </a>
         </li>
         <li class="nav-item">
           <a
             href="/ro"
-            class="nav-link"
+            class="nav-link language"
             [ngClass]="{ 'active fw-bold': locale === 'ro' }"
             [attr.aria-current]="locale === 'ro' ? _language : undefined"
-            >ro</a
           >
+            <span class="short">Ro</span>
+            <span class="long">Română</span>
+          </a>
         </li>
       </ul>
     </div>
