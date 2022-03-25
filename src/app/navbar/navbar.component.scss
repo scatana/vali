@@ -23,10 +23,6 @@
   height: 100vh;
   background: linear-gradient(to top, #a71717, $red);
 
-  .navbar-nav {
-    height: 100%;
-  }
-
   .btn-close {
     position: absolute;
     top: 1rem;
@@ -41,6 +37,7 @@
       background-image: url(../../assets/images/logo_128-monogram.png);
       background-size: 64px 64px;
       background-repeat: no-repeat;
+      background-position: center;
       width: 64px;
       height: 64px;
       opacity: 0.75;
@@ -48,7 +45,7 @@
   }
 
   .section {
-    font-size: 1.375rem;
+    font-size: 1.125rem;
   }
 
   .language .short {
@@ -84,8 +81,4 @@
     letter-spacing: 0.5px;
     margin-top: -4px;
   }
-}
-
-.separator {
-  color: rgba(255, 255, 255, 0.35);
 }

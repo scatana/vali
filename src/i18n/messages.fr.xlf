@@ -30,19 +30,19 @@
       <context-group purpose="location"><context context-type="sourcefile">src/app/navbar/navbar.component.html</context><context context-type="linenumber">14</context></context-group></trans-unit><trans-unit id="7819314041543176992" datatype="html">
         <source>Close</source><target state="translated">Fermer</target>
         
-      <context-group purpose="location"><context context-type="sourcefile">src/app/navbar/navbar.component.html</context><context context-type="linenumber">30</context></context-group></trans-unit><trans-unit id="7143579180750436311" datatype="html">
+      <context-group purpose="location"><context context-type="sourcefile">src/app/navbar/navbar.component.html</context><context context-type="linenumber">33</context></context-group></trans-unit><trans-unit id="7143579180750436311" datatype="html">
         <source>Services</source><target state="translated">Services</target>
         
-      <context-group purpose="location"><context context-type="sourcefile">src/app/navbar/navbar.component.html</context><context context-type="linenumber">44</context></context-group></trans-unit><trans-unit id="5549658200455976034" datatype="html">
+      <context-group purpose="location"><context context-type="sourcefile">src/app/navbar/navbar.component.html</context><context context-type="linenumber">43</context></context-group></trans-unit><trans-unit id="5549658200455976034" datatype="html">
         <source>Rates</source><target state="translated">Prix</target>
         
-      <context-group purpose="location"><context context-type="sourcefile">src/app/navbar/navbar.component.html</context><context context-type="linenumber">47</context></context-group></trans-unit><trans-unit id="7100508900545127127" datatype="html">
+      <context-group purpose="location"><context context-type="sourcefile">src/app/navbar/navbar.component.html</context><context context-type="linenumber">46</context></context-group></trans-unit><trans-unit id="7100508900545127127" datatype="html">
         <source>Testimonials</source><target state="translated">Témoignages</target>
         
-      <context-group purpose="location"><context context-type="sourcefile">src/app/navbar/navbar.component.html</context><context context-type="linenumber">50</context></context-group></trans-unit><trans-unit id="7922989125096435449" datatype="html">
+      <context-group purpose="location"><context context-type="sourcefile">src/app/navbar/navbar.component.html</context><context context-type="linenumber">49</context></context-group></trans-unit><trans-unit id="7922989125096435449" datatype="html">
         <source>Contact</source><target state="translated">Contact</target>
         
-      <context-group purpose="location"><context context-type="sourcefile">src/app/navbar/navbar.component.html</context><context context-type="linenumber">53</context></context-group></trans-unit><trans-unit id="2347724151568473592" datatype="html">
+      <context-group purpose="location"><context context-type="sourcefile">src/app/navbar/navbar.component.html</context><context context-type="linenumber">52</context></context-group></trans-unit><trans-unit id="2347724151568473592" datatype="html">
         <source>language</source><target state="translated">langue</target>
         
       <context-group purpose="location"><context context-type="sourcefile">src/app/navbar/navbar.component.ts</context><context context-type="linenumber">24</context></context-group></trans-unit>
