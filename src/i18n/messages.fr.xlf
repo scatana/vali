@@ -12,13 +12,13 @@
       <context-group purpose="location"><context context-type="sourcefile">src/app/app.component.ts</context><context context-type="linenumber">18</context></context-group></trans-unit><trans-unit id="7888618475525464632" datatype="html">
         <source>Valentina</source><target state="translated">Valentina</target>
         
-      <context-group purpose="location"><context context-type="sourcefile">src/app/hero/hero.component.html</context><context context-type="linenumber">5</context></context-group></trans-unit><trans-unit id="1996970629812294014" datatype="html">
+      <context-group purpose="location"><context context-type="sourcefile">src/app/hero/hero.component.html</context><context context-type="linenumber">4</context></context-group></trans-unit><trans-unit id="1996970629812294014" datatype="html">
         <source>Catana</source><target state="translated">Catana</target>
         
-      <context-group purpose="location"><context context-type="sourcefile">src/app/hero/hero.component.html</context><context context-type="linenumber">6</context></context-group></trans-unit><trans-unit id="4490609624548278419" datatype="html">
+      <context-group purpose="location"><context context-type="sourcefile">src/app/hero/hero.component.html</context><context context-type="linenumber">5</context></context-group></trans-unit><trans-unit id="4490609624548278419" datatype="html">
         <source>Certified Translator. Member of OTTIAQ.</source><target state="translated">Traducteur agréé. Membre de l’OTTIAQ.</target>
         
-      <context-group purpose="location"><context context-type="sourcefile">src/app/hero/hero.component.html</context><context context-type="linenumber">7</context></context-group></trans-unit><trans-unit id="4746331966856921428" datatype="html">
+      <context-group purpose="location"><context context-type="sourcefile">src/app/hero/hero.component.html</context><context context-type="linenumber">6</context></context-group></trans-unit><trans-unit id="4746331966856921428" datatype="html">
         <source>Valentina Catana</source><target state="translated">Valentina Catana</target>
         
       <context-group purpose="location"><context context-type="sourcefile">src/app/navbar/navbar.component.html</context><context context-type="linenumber">4</context></context-group></trans-unit><trans-unit id="3835046208910558328" datatype="html">

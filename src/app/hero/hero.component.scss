@@ -2,7 +2,6 @@
   background-image: url(../../assets/images/hero-bg_576.jpg);
   background-position: center;
   background-size: cover;
-  padding-bottom: 4rem;
   text-shadow: 0 0 2px #000;
 
   // Small devices (landscape phones, 576px and up)
@@ -35,9 +34,11 @@
   }
 
   .logo {
+    box-sizing: content-box;
+    background-image: url(../../assets/images/logo_128-monogram.png);
+    background-size: 64px 64px;
+    background-repeat: no-repeat;
     width: 64px;
     height: 64px;
-    margin-top: 4rem;
-    margin-bottom: 10rem;
   }
 }
