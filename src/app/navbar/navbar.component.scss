@@ -3,11 +3,12 @@
 
 .navbar {
   background-color: #a71717;
-  font-family: "Roboto Slab";
-  font-weight: 400;
 }
 
 .navbar-collapse {
+  font-family: "Roboto Slab";
+  font-weight: 400;
+
   .logo,
   .language .long {
     display: none;
@@ -56,11 +57,21 @@
 }
 
 .navbar-brand {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  background-image: url(../../assets/images/logo_64-stroke.png);
-  background-size: contain;
+  background-image: url(../../assets/images/logo_128-monogram.png);
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  padding: 0 0 0 40px;
+
+  .name {
+    font-weight: bold;
+    font-size: 0.875rem;
+  }
+
+  .title {
+    font-size: 0.625rem;
+    text-transform: uppercase;
+  }
 }
 
 .separator {
