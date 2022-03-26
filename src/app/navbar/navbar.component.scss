@@ -58,18 +58,14 @@
 }
 
 .navbar-brand {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
   height: 40px;
   background-image: url(../../assets/images/logo_128-monogram.png);
-  background-size: 32px 32px;
+  background-size: 40px 40px;
   background-repeat: no-repeat;
   background-position: 0 50%;
   font-weight: bold;
   font-size: 1.125rem;
-  line-height: 1;
-  padding: 0 0 0 40px;
+  padding: 0 0 0 48px;
   opacity: 0.75;
   transition: opacity 0.2s ease-in-out;
 
