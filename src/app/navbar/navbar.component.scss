@@ -66,24 +66,14 @@
   background-size: 32px 32px;
   background-repeat: no-repeat;
   background-position: 0 50%;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1;
   padding: 0 0 0 40px;
-  opacity: 0.55;
+  opacity: 0.75;
   transition: opacity 0.2s ease-in-out;
 
   &:hover {
-    opacity: 0.75;
-  }
-
-  .name {
-    font-weight: bold;
-    font-size: 1.125rem;
-    line-height: 1;
-  }
-
-  .title {
-    font-size: 0.75rem;
-    line-height: 1;
-    text-transform: uppercase;
-    letter-spacing: 0.25px;
+    opacity: 1;
   }
 }
