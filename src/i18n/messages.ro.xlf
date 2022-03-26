@@ -2,51 +2,58 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template" target-language="ro">
     <body>
+      <trans-unit id="1996970629812294014" datatype="html">
+        <source>Catana</source>
+        <target state="translated">Cătană</target>
+      </trans-unit>
+      <trans-unit id="2347724151568473592" datatype="html">
+        <source>language</source>
+        <target state="translated">limbă</target>
+      </trans-unit>
+      <trans-unit id="2639190206151598614" datatype="html">
+        <source>Certified translator Montreal, Quebec, Canada. Certified translations from and into English, French, Romanian. Official documents, general texts, subtitling.</source>
+        <target state="translated">Traducător autorizat Montreal, Quebec, Canada. Traduceri autorizate din și în română, franceză, engleză. Documente oficiale, texte generale, subtitrări.</target>
+      </trans-unit>
+      <trans-unit id="4490609624548278419" datatype="html">
+        <source>Certified Translator. Member of OTTIAQ.</source>
+        <target state="translated">Traducător autorizat. Membru OTTIAQ.</target>
+      </trans-unit>
+      <trans-unit id="4746331966856921428" datatype="html">
+        <source>Valentina Catana</source>
+        <target state="translated">Valentina Cătană</target>
+      </trans-unit>
+      <trans-unit id="5549658200455976034" datatype="html">
+        <source>Rates</source>
+        <target state="translated">Tarife</target>
+      </trans-unit>
+      <trans-unit id="7100508900545127127" datatype="html">
+        <source>Testimonials</source>
+        <target state="translated">Impresii</target>
+      </trans-unit>
       <trans-unit id="7110017985772601417" datatype="html">
         <source>Valentina Catana - Certified Translator, Montreal</source>
         <target state="translated">Valentina Cătană - Traducător autorizat, Montreal</target>
-        
-      <context-group purpose="location"><context context-type="sourcefile">src/app/app.component.ts</context><context context-type="linenumber">14</context></context-group></trans-unit><trans-unit id="2639190206151598614" datatype="html">
-        <source>Certified translator Montreal, Quebec, Canada. Certified translations from and into English, French, Romanian. Official documents, general texts, subtitling.</source><target state="translated">Traducător autorizat Montreal, Quebec, Canada. Traduceri autorizate din și în română, franceză, engleză. Documente oficiale, texte generale, subtitrări.</target>
-        
-      <context-group purpose="location"><context context-type="sourcefile">src/app/app.component.ts</context><context context-type="linenumber">18</context></context-group></trans-unit><trans-unit id="7888618475525464632" datatype="html">
-        <source>Valentina</source><target state="translated">Valentina</target>
-        
-      <context-group purpose="location"><context context-type="sourcefile">src/app/hero/hero.component.html</context><context context-type="linenumber">4</context></context-group></trans-unit><trans-unit id="1996970629812294014" datatype="html">
-        <source>Catana</source><target state="translated">Cătană</target>
-        
-      <context-group purpose="location"><context context-type="sourcefile">src/app/hero/hero.component.html</context><context context-type="linenumber">5</context></context-group></trans-unit><trans-unit id="4490609624548278419" datatype="html">
-        <source>Certified Translator. Member of OTTIAQ.</source><target state="translated">Traducător autorizat. Membru OTTIAQ.</target>
-        
-      <context-group purpose="location"><context context-type="sourcefile">src/app/hero/hero.component.html</context><context context-type="linenumber">6</context></context-group></trans-unit><trans-unit id="4746331966856921428" datatype="html">
-        <source>Valentina Catana</source><target state="translated">Valentina Cătană</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">4</context>
-        </context-group>
-      </trans-unit><trans-unit id="8255834268347738766" datatype="html">
-        <source>Toggle navigation</source><target state="translated">Afișează/închide meniu</target>
-        
-      <context-group purpose="location"><context context-type="sourcefile">src/app/navbar/navbar.component.html</context><context context-type="linenumber">13</context></context-group></trans-unit><trans-unit id="7819314041543176992" datatype="html">
-        <source>Close</source><target state="translated">Închide</target>
-        
-      <context-group purpose="location"><context context-type="sourcefile">src/app/navbar/navbar.component.html</context><context context-type="linenumber">32</context></context-group></trans-unit><trans-unit id="7143579180750436311" datatype="html">
-        <source>Services</source><target state="translated">Servicii</target>
-        
-      <context-group purpose="location"><context context-type="sourcefile">src/app/navbar/navbar.component.html</context><context context-type="linenumber">42</context></context-group></trans-unit><trans-unit id="5549658200455976034" datatype="html">
-        <source>Rates</source><target state="translated">Tarife</target>
-        
-      <context-group purpose="location"><context context-type="sourcefile">src/app/navbar/navbar.component.html</context><context context-type="linenumber">45</context></context-group></trans-unit><trans-unit id="7100508900545127127" datatype="html">
-        <source>Testimonials</source><target state="translated">Impresii</target>
-        
-      <context-group purpose="location"><context context-type="sourcefile">src/app/navbar/navbar.component.html</context><context context-type="linenumber">48</context></context-group></trans-unit><trans-unit id="7922989125096435449" datatype="html">
-        <source>Contact</source><target state="translated">Contact</target>
-        
-      <context-group purpose="location"><context context-type="sourcefile">src/app/navbar/navbar.component.html</context><context context-type="linenumber">51</context></context-group></trans-unit><trans-unit id="2347724151568473592" datatype="html">
-        <source>language</source><target state="translated">limbă</target>
-        
-      <context-group purpose="location"><context context-type="sourcefile">src/app/navbar/navbar.component.ts</context><context context-type="linenumber">24</context></context-group></trans-unit>
-      
+      </trans-unit>
+      <trans-unit id="7143579180750436311" datatype="html">
+        <source>Services</source>
+        <target state="translated">Servicii</target>
+      </trans-unit>
+      <trans-unit id="7819314041543176992" datatype="html">
+        <source>Close</source>
+        <target state="translated">Închide</target>
+      </trans-unit>
+      <trans-unit id="7888618475525464632" datatype="html">
+        <source>Valentina</source>
+        <target state="translated">Valentina</target>
+      </trans-unit>
+      <trans-unit id="7922989125096435449" datatype="html">
+        <source>Contact</source>
+        <target state="translated">Contact</target>
+      </trans-unit>
+      <trans-unit id="8255834268347738766" datatype="html">
+        <source>Toggle navigation</source>
+        <target state="translated">Afișează/închide meniu</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
