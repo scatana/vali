@@ -1,5 +1,12 @@
 .navbar {
-  background-color: var(--bs-primary);
+  background-color: var(--bs-main-brand-color);
+  box-shadow: 0 0 3px 0 black;
+  margin-top: -56px;
+  transition: margin-top 0.2s ease-in-out;
+
+  &.show {
+    margin-top: 0;
+  }
 }
 
 .navbar-collapse {
@@ -19,9 +26,9 @@
   width: 100vw;
   height: 100vh;
   background: linear-gradient(
-    to top,
-    var(--bs-primary),
-    var(--bs-roof-terracotta)
+    to bottom,
+    var(--bs-main-brand-color),
+    var(--bs-accent-brand-color)
   );
 
   .btn-close {

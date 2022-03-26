@@ -2,31 +2,22 @@
 $enable-negative-margins: true;
 
 // Custom colors
-$baltic-sea: #26242b;
-$christine: #e6720b;
-$dingley: #698343;
-$merlot: #800020;
-$mobster: #79767a;
-$pomegranate: #f44336;
-$raw-sienna: #d67a3c;
-$roof-terracotta: #aa0c1f;
-$westar: #deddd8;
-
-$dark-accent: $raw-sienna;
-$dark-shade: $baltic-sea;
-$light-accent: $mobster;
-$light-shade: $westar;
+$main-brand-color: #800020;
+$accent-brand-color: #aa0c1f;
+$success-color: #698343;
+$warning-color: #e6720b;
+$danger-color: #f44336;
+$dark-accent: #7979a0;
+$dark-shade: #15151d;
+$light-accent: #d89e4e;
+$light-shade: #faf6f9;
 
 $custom-colors: (
-  baltic-sea: $baltic-sea,
-  christine: $christine,
-  dingley: $dingley,
-  merlot: $merlot,
-  mobster: $mobster,
-  pomegranate: $pomegranate,
-  raw-sienna: $raw-sienna,
-  roof-terracotta: $roof-terracotta,
-  westar: $westar,
+  main-brand-color: $main-brand-color,
+  accent-brand-color: $accent-brand-color,
+  success-color: $success-color,
+  warning-color: $warning-color,
+  danger-color: $danger-color,
   dark-accent: $dark-accent,
   dark-shade: $dark-shade,
   light-accent: $light-accent,
@@ -34,11 +25,11 @@ $custom-colors: (
 );
 
 // Bootstrap theme variables
-$primary: $merlot;
-$success: $dingley;
-$info: $baltic-sea;
-$warning: $christine;
-$danger: $pomegranate;
+$primary: $main-brand-color;
+$success: $success-color;
+$info: $dark-shade;
+$warning: $warning-color;
+$danger: $danger-color;
 
 $body-bg: $light-shade;
 $body-color: $dark-shade;
