@@ -1,8 +1,5 @@
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-
 .navbar {
-  background-color: #a71717;
+  background-color: var(--bs-primary);
 }
 
 .navbar-collapse {
@@ -21,7 +18,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to top, #a71717, $red);
+  background: linear-gradient(to top, var(--bs-primary), var(--bs-red));
 
   .btn-close {
     position: absolute;

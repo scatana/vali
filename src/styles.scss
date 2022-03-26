@@ -1,10 +1,12 @@
 // Configuration
 @import "~bootstrap/scss/functions";
 
-//
-// Variable overrides go here
-//
+// Variable overrides
 $enable-negative-margins: true;
+
+// Theme adjustments
+$burgundy: #bd081c;
+$primary: $burgundy;
 
 // Configuration cont.
 @import "~bootstrap/scss/variables";
