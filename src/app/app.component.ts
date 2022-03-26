@@ -18,10 +18,6 @@ export class AppComponent {
       content: 'width=device-width, initial-scale=1',
     });
     this.metaService.addTag({
-      name: 'theme-color',
-      content: '#800020',
-    });
-    this.metaService.addTag({
       name: 'format-detection',
       content: 'telephone=no',
     });

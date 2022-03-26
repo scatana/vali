@@ -67,11 +67,9 @@ describe('NavbarComponent', () => {
     it('should toggle the open/closed state of the menu', () => {
       component.toggleMenu();
       expect(component.isMenuClosed).toBe(false);
-      expect(document.body.classList).toContain('overflow-hidden');
 
       component.toggleMenu();
       expect(component.isMenuClosed).toBe(true);
-      expect(document.body.classList).not.toContain('overflow-hidden');
     });
   });
 

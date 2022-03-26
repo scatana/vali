@@ -4,7 +4,6 @@ import {
   Inject,
   LOCALE_ID,
   OnInit,
-  Renderer2,
 } from '@angular/core';
 
 const NAVBAR_DISPLAY_THRESHOLD = 112;
@@ -18,10 +17,7 @@ export class NavbarComponent implements OnInit {
   isNavbarHidden = true;
   isMenuClosed = true;
 
-  constructor(
-    @Inject(LOCALE_ID) public locale: string,
-    private renderer: Renderer2
-  ) {}
+  constructor(@Inject(LOCALE_ID) public locale: string) {}
 
   ngOnInit(): void {}
 
@@ -32,23 +28,13 @@ export class NavbarComponent implements OnInit {
 
   toggleMenu(): void {
     this.isMenuClosed = !this.isMenuClosed;
-    this.adjustScrollOnBody();
   }
 
   @HostListener('window:resize', [])
   closeMenu(): void {
     this.isMenuClosed = true;
-    this.adjustScrollOnBody();
   }
 
   // Template helpers for aria attributes
   _language = $localize`language`;
-
-  private adjustScrollOnBody() {
-    if (this.isMenuClosed) {
-      this.renderer.removeClass(document.body, 'overflow-hidden');
-    } else {
-      this.renderer.addClass(document.body, 'overflow-hidden');
-    }
-  }
 }
