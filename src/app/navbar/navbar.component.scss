@@ -73,12 +73,15 @@
   .name {
     font-weight: bold;
     font-size: 1rem;
+    line-height: 1rem;
+    margin: 2px 0;
   }
 
   .title {
     font-size: 0.625rem;
+    line-height: 0.625rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    margin-top: -4px;
+    margin-bottom: 2px;
   }
 }
