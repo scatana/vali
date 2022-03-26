@@ -97,10 +97,12 @@
               "browserTarget": "vali:build:development"
             },
             "fr": {
-              "browserTarget": "vali:build:fr"
+              "browserTarget": "vali:build:fr",
+              "port": 4201
             },
             "ro": {
-              "browserTarget": "vali:build:ro"
+              "browserTarget": "vali:build:ro",
+              "port": 4202
             }
           },
           "defaultConfiguration": "development"
@@ -122,7 +124,19 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.scss"],
             "scripts": []
-          }
+          },
+          "configurations": {
+            "development": {
+              "watch": true,
+              "progress": true
+            },
+            "ci": {
+              "watch": false,
+              "progress": false,
+              "browsers": "ChromeHeadlessCI"
+            }
+          },
+          "defaultConfiguration": "development"
         },
         "server": {
           "builder": "@angular-devkit/build-angular:server",
@@ -189,10 +203,7 @@
           "options": {
             "format": "xlf",
             "outputPath": "src/i18n",
-            "targetFiles": [
-              "messages.fr.xlf",
-              "messages.ro.xlf"
-            ],
+            "targetFiles": ["messages.fr.xlf", "messages.ro.xlf"],
             "sourceFile": "../../messages.xlf"
           }
         }

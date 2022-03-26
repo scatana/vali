@@ -18,7 +18,11 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to top, var(--bs-primary), var(--bs-red));
+  background: linear-gradient(
+    to top,
+    var(--bs-primary),
+    var(--bs-roof-terracotta)
+  );
 
   .btn-close {
     position: absolute;
