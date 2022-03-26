@@ -14,12 +14,20 @@ export class AppComponent {
       $localize`Valentina Catana - Certified Translator, Montreal`
     );
     this.metaService.addTag({
-      name: 'description',
-      content: $localize`Certified translator Montreal, Quebec, Canada. Certified translations from and into English, French, Romanian. Official documents, general texts, subtitling.`,
+      name: 'viewport',
+      content: 'width=device-width, initial-scale=1',
+    });
+    this.metaService.addTag({
+      name: 'theme-color',
+      content: '#800020',
     });
     this.metaService.addTag({
       name: 'format-detection',
       content: 'telephone=no',
+    });
+    this.metaService.addTag({
+      name: 'description',
+      content: $localize`Certified translator Montreal, Quebec, Canada. Certified translations from and into English, French, Romanian. Official documents, general texts, subtitling.`,
     });
   }
 }

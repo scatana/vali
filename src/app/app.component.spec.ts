@@ -9,6 +9,7 @@ import { ServicesComponent } from './services/services.component';
 describe('AppComponent', () => {
   let titleServiceSpy: jasmine.SpyObj<Title>;
   let metaServiceSpy: jasmine.SpyObj<Meta>;
+  let app: AppComponent;
 
   beforeEach(async () => {
     const titleSpy = jasmine.createSpyObj('Title', ['setTitle']);
@@ -29,36 +30,41 @@ describe('AppComponent', () => {
 
     titleServiceSpy = TestBed.inject(Title) as jasmine.SpyObj<Title>;
     metaServiceSpy = TestBed.inject(Meta) as jasmine.SpyObj<Meta>;
+
+    const fixture = TestBed.createComponent(AppComponent);
+    app = fixture.componentInstance;
+    app.ngOnInit();
   });
 
   it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
     expect(app).toBeTruthy();
   });
 
   it(`should set the title using the Title service`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    app.ngOnInit();
     expect(titleServiceSpy.setTitle).toHaveBeenCalled();
   });
 
-  it(`should set the 'description' meta tag`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    app.ngOnInit();
+  it(`should set the 'viewport' meta tag`, () => {
     expect(metaServiceSpy.addTag).toHaveBeenCalledWith(
-      jasmine.objectContaining({ name: 'description' })
+      jasmine.objectContaining({ name: 'viewport' })
+    );
+  });
+
+  it(`should set the 'theme-color' meta tag`, () => {
+    expect(metaServiceSpy.addTag).toHaveBeenCalledWith(
+      jasmine.objectContaining({ name: 'theme-color' })
     );
   });
 
   it(`should set the 'format-detection' meta tag`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    app.ngOnInit();
     expect(metaServiceSpy.addTag).toHaveBeenCalledWith(
       jasmine.objectContaining({ name: 'format-detection' })
+    );
+  });
+
+  it(`should set the 'description' meta tag`, () => {
+    expect(metaServiceSpy.addTag).toHaveBeenCalledWith(
+      jasmine.objectContaining({ name: 'description' })
     );
   });
 });
