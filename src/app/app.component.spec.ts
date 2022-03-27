@@ -50,6 +50,12 @@ describe('AppComponent', () => {
     );
   });
 
+  it(`should set the 'theme-color' meta tag`, () => {
+    expect(metaServiceSpy.addTag).toHaveBeenCalledWith(
+      jasmine.objectContaining({ name: 'theme-color' })
+    );
+  });
+
   it(`should set the 'format-detection' meta tag`, () => {
     expect(metaServiceSpy.addTag).toHaveBeenCalledWith(
       jasmine.objectContaining({ name: 'format-detection' })

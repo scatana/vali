@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 
+const MAIN_BRAND_COLOR = '#800020';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -16,6 +18,10 @@ export class AppComponent {
     this.metaService.addTag({
       name: 'viewport',
       content: 'width=device-width, initial-scale=1',
+    });
+    this.metaService.addTag({
+      name: 'theme-color',
+      content: MAIN_BRAND_COLOR,
     });
     this.metaService.addTag({
       name: 'format-detection',
