@@ -38,7 +38,6 @@ export class NavbarComponent implements OnInit {
     disableBodyScroll(this.elementRef.nativeElement);
   }
 
-  @HostListener('window:resize', [])
   closeMenu(): void {
     this.isMenuClosed = true;
     enableBodyScroll(this.elementRef.nativeElement);

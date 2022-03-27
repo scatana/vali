@@ -36,17 +36,6 @@ describe('NavbarComponent', () => {
     expect(spyToggleNavbar).toHaveBeenCalled();
   });
 
-  it('should close the menu when the window is resized', () => {
-    const spyCloseMenu = spyOn(component, 'closeMenu').and.callThrough();
-
-    component.openMenu();
-    expect(component.isMenuClosed).toBe(false);
-
-    window.dispatchEvent(new Event('resize'));
-    expect(spyCloseMenu).toHaveBeenCalled();
-    expect(component.isMenuClosed).toBe(true);
-  });
-
   describe('toggleNavbar()', () => {
     it('should toggle the navbar based on the scrolling offset', () => {
       window.scrollY = WINDOW_SCROLL_Y_POSITION;
