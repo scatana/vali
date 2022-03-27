@@ -39,7 +39,7 @@ describe('NavbarComponent', () => {
   it('should close the menu when the window is resized', () => {
     const spyCloseMenu = spyOn(component, 'closeMenu').and.callThrough();
 
-    component.toggleMenu();
+    component.openMenu();
     expect(component.isMenuClosed).toBe(false);
 
     window.dispatchEvent(new Event('resize'));
@@ -63,19 +63,16 @@ describe('NavbarComponent', () => {
     });
   });
 
-  describe('toggleMenu()', () => {
-    it('should toggle the open/closed state of the menu', () => {
-      component.toggleMenu();
+  describe('openMenu()', () => {
+    it('should trigger the display of the menu', () => {
+      component.openMenu();
       expect(component.isMenuClosed).toBe(false);
-
-      component.toggleMenu();
-      expect(component.isMenuClosed).toBe(true);
     });
   });
 
   describe('closeMenu()', () => {
     it('should close the menu', () => {
-      component.toggleMenu();
+      component.openMenu();
       expect(component.isMenuClosed).toBe(false);
 
       component.closeMenu();

@@ -4,7 +4,10 @@ import {
   Inject,
   LOCALE_ID,
   OnInit,
+  ElementRef,
+  Renderer2,
 } from '@angular/core';
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 const NAVBAR_DISPLAY_THRESHOLD = 112;
 
@@ -17,7 +20,11 @@ export class NavbarComponent implements OnInit {
   isNavbarHidden = true;
   isMenuClosed = true;
 
-  constructor(@Inject(LOCALE_ID) public locale: string) {}
+  constructor(
+    @Inject(LOCALE_ID) public locale: string,
+    private elementRef: ElementRef,
+    private renderer: Renderer2
+  ) {}
 
   ngOnInit(): void {}
 
@@ -26,13 +33,15 @@ export class NavbarComponent implements OnInit {
     this.isNavbarHidden = window.scrollY <= NAVBAR_DISPLAY_THRESHOLD;
   }
 
-  toggleMenu(): void {
-    this.isMenuClosed = !this.isMenuClosed;
+  openMenu(): void {
+    this.isMenuClosed = false;
+    disableBodyScroll(this.elementRef.nativeElement);
   }
 
   @HostListener('window:resize', [])
   closeMenu(): void {
     this.isMenuClosed = true;
+    enableBodyScroll(this.elementRef.nativeElement);
   }
 
   // Template helpers for aria attributes
