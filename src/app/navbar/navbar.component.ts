@@ -9,9 +9,11 @@ import {
 import { Meta } from '@angular/platform-browser';
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
-const MAIN_BRAND_COLOR = '#800020';
-const ACCENT_BRAND_COLOR = '#aa0c1f';
-const NAVBAR_DISPLAY_THRESHOLD = 112;
+import {
+  MAIN_BRAND_COLOR,
+  ACCENT_BRAND_COLOR,
+  NAVBAR_DISPLAY_THRESHOLD,
+} from '../constants';
 
 @Component({
   selector: 'app-navbar',

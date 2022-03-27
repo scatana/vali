@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 
-const MAIN_BRAND_COLOR = '#800020';
+import { MAIN_BRAND_COLOR } from './constants';
 
 @Component({
   selector: 'app-root',
