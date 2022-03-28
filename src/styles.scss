@@ -83,3 +83,40 @@ $colors: map-merge($custom-colors, $colors);
 
 // Utilities
 @import "~bootstrap/scss/utilities/api";
+
+// Global styles
+/* roboto-slab-regular */
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("./assets/fonts/roboto-slab-v22-latin-ext_latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("./assets/fonts/roboto-slab-v22-latin-ext_latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("./assets/fonts/roboto-slab-v22-latin-ext_latin-regular.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+}
+/* roboto-slab-600 */
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""),
+    url("./assets/fonts/roboto-slab-v22-latin-ext_latin-700.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("./assets/fonts/roboto-slab-v22-latin-ext_latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("./assets/fonts/roboto-slab-v22-latin-ext_latin-700.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+}
+
+.section-title {
+  font-family: "Roboto Slab";
+  font-weight: 700;
+}

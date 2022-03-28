@@ -3,6 +3,7 @@
   background-position: center;
   background-size: cover;
   text-shadow: 0 0 2px #000;
+  border-bottom: 5px solid var(--bs-main-brand-color);
 
   // Small devices (landscape phones, 576px and up)
   @media (min-width: 576px) {
