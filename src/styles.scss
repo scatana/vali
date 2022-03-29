@@ -91,6 +91,10 @@ $colors: map-merge($custom-colors, $colors);
 @import "~bootstrap/scss/utilities/api";
 
 // Global styles
+::selection {
+  background: rgba($light-accent, 0.4);
+}
+
 .font-slab {
   font-family: "Roboto Slab";
 }
