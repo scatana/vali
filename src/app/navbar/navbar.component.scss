@@ -6,6 +6,7 @@
   padding: 0;
   border-radius: 6px;
   box-shadow: 0 0 3px 0 black;
+  z-index: 1;
 
   &.show {
     position: fixed;

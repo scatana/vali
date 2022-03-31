@@ -44,25 +44,13 @@ describe('AppComponent', () => {
     expect(titleServiceSpy.setTitle).toHaveBeenCalled();
   });
 
-  it(`should set the 'viewport' meta tag`, () => {
+  it(`should set the right meta tags`, () => {
     expect(metaServiceSpy.addTag).toHaveBeenCalledWith(
       jasmine.objectContaining({ name: 'viewport' })
     );
-  });
-
-  it(`should set the 'theme-color' meta tag`, () => {
     expect(metaServiceSpy.addTag).toHaveBeenCalledWith(
       jasmine.objectContaining({ name: 'theme-color' })
     );
-  });
-
-  it(`should set the 'format-detection' meta tag`, () => {
-    expect(metaServiceSpy.addTag).toHaveBeenCalledWith(
-      jasmine.objectContaining({ name: 'format-detection' })
-    );
-  });
-
-  it(`should set the 'description' meta tag`, () => {
     expect(metaServiceSpy.addTag).toHaveBeenCalledWith(
       jasmine.objectContaining({ name: 'description' })
     );

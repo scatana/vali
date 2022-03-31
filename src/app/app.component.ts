@@ -24,10 +24,6 @@ export class AppComponent {
       content: MAIN_BRAND_COLOR,
     });
     this.metaService.addTag({
-      name: 'format-detection',
-      content: 'telephone=no',
-    });
-    this.metaService.addTag({
       name: 'description',
       content: $localize`Certified translator Montreal, Quebec, Canada. Certified translations from and into English, French, Romanian. Official documents, general texts, subtitling.`,
     });
