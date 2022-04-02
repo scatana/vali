@@ -2,9 +2,10 @@ import { TestBed } from '@angular/core/testing';
 import { Title, Meta } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { HeroComponent } from './hero/hero.component';
-import { ServicesComponent } from './services/services.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { HeroComponent } from './components/hero/hero.component';
+import { ServicesComponent } from './components/services/services.component';
+import { RatesComponent } from './components/rates/rates.component';
 
 describe('AppComponent', () => {
   let titleServiceSpy: jasmine.SpyObj<Title>;
@@ -21,6 +22,7 @@ describe('AppComponent', () => {
         NavbarComponent,
         HeroComponent,
         ServicesComponent,
+        RatesComponent,
       ],
       providers: [
         { provide: Title, useValue: titleSpy },

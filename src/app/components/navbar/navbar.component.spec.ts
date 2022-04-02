@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NavbarComponent } from './navbar.component';
-import { NAVBAR_DISPLAY_THRESHOLD } from '../utils/constants';
+import { NAVBAR_DISPLAY_THRESHOLD } from '../../utils/constants';
 
 const WINDOW_SCROLL_Y_POSITION = 10;
 

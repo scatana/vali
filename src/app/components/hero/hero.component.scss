@@ -1,28 +1,28 @@
 #hero {
-  background-image: url(../../assets/images/hero-bg_576.jpg);
+  background-image: url(../../../assets/images/hero-bg_576.jpg);
   background-position: center;
   background-size: cover;
   text-shadow: 0 0 2px #000;
 
   // Small devices (landscape phones, 576px and up)
   @media (min-width: 576px) {
-    background-image: url(../../assets/images/hero-bg_768.jpg);
+    background-image: url(../../../assets/images/hero-bg_768.jpg);
   }
   // // Medium devices (tablets, 768px and up)
   @media (min-width: 768px) {
-    background-image: url(../../assets/images/hero-bg_992.jpg);
+    background-image: url(../../../assets/images/hero-bg_992.jpg);
   }
   // // Large devices (desktops, 992px and up)
   @media (min-width: 992px) {
-    background-image: url(../../assets/images/hero-bg_1200.jpg);
+    background-image: url(../../../assets/images/hero-bg_1200.jpg);
   }
   // // X-Large devices (large desktops, 1200px and up)
   @media (min-width: 1200px) {
-    background-image: url(../../assets/images/hero-bg_1400.jpg);
+    background-image: url(../../../assets/images/hero-bg_1400.jpg);
   }
   // // XX-Large devices (larger desktops, 1400px and up)
   @media (min-width: 1400px) {
-    background-image: url(../../assets/images/hero-bg_1920.jpg);
+    background-image: url(../../../assets/images/hero-bg_1920.jpg);
   }
 
   p {
@@ -31,7 +31,7 @@
 
   .logo {
     box-sizing: content-box;
-    background-image: url(../../assets/images/logo_128-monogram.png);
+    background-image: url(../../../assets/images/logo_128-monogram.png);
     background-size: 64px 64px;
     background-repeat: no-repeat;
     width: 64px;

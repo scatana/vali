@@ -13,7 +13,7 @@ import {
   MAIN_BRAND_COLOR,
   ACCENT_BRAND_COLOR,
   NAVBAR_DISPLAY_THRESHOLD,
-} from '../utils/constants';
+} from '../../utils/constants';
 
 @Component({
   selector: 'app-navbar',
