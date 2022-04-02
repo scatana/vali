@@ -7,6 +7,8 @@ import { HeroComponent } from './components/hero/hero.component';
 import { ServicesComponent } from './components/services/services.component';
 import { RatesComponent } from './components/rates/rates.component';
 
+import { PricingService } from './services/pricing/pricing.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,7 @@ import { RatesComponent } from './components/rates/rates.component';
     RatesComponent,
   ],
   imports: [BrowserModule.withServerTransition({ appId: 'serverApp' })],
-  providers: [Title],
+  providers: [Title, PricingService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -7,6 +7,8 @@ import { HeroComponent } from './components/hero/hero.component';
 import { ServicesComponent } from './components/services/services.component';
 import { RatesComponent } from './components/rates/rates.component';
 
+import { PricingService } from './services/pricing/pricing.service';
+
 describe('AppComponent', () => {
   let titleServiceSpy: jasmine.SpyObj<Title>;
   let metaServiceSpy: jasmine.SpyObj<Meta>;
@@ -27,6 +29,7 @@ describe('AppComponent', () => {
       providers: [
         { provide: Title, useValue: titleSpy },
         { provide: Meta, useValue: metaSpy },
+        PricingService,
       ],
     }).compileComponents();
 
